@@ -11,7 +11,7 @@ if ! [[ "${1}" ==  *.vcf.gz || "${1}" ==  *.vcf.gz ]] ; then
 fi
 
 re='^[0-9]+([.][0-9]+)?$'
-if ! [[ ""${2}"" =~ $re && $( echo "${2}>1" | bc ) == 1 ]] ; then
+if ! [[ ""${2}"" =~ $re && $( echo "${2}<=1" | bc ) == 1 ]] ; then
 	echo "## ERROR ## Nedd to povide a non-negative decimal equal to or below 1.0"
 	exit 1
 fi
