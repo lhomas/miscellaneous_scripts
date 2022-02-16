@@ -9,3 +9,7 @@ These have been put together on the fly and are likely bad scripts, please don't
 # splice_AI_filt.sh
 - Script for filtering VCF files output from SpliceAI and returning inforamtion about variants that have score above specified threshold.
 - bash splice_AI_filt.sh /path/to/spliceAI_output.vcf.gz minimum_score_threshold > splice_vars_output.txt
+
+# linkage_subset_vcf.sh
+- Scfipt to select individuals from multisample vcf and filter down to only variants withing a specified interval
+- USAGE: bash linkage_subset_vcf.sh /path/to/file_containing_variants.vcf.gz comma,separated,sample,list output_prefix chr:start-end
