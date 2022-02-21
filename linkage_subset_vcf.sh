@@ -42,7 +42,7 @@ bcftools view -i 'GT[*]="alt"' -O z -o ${3}.vcf.gz ${3}_temp.vcf.gz
 tabix ${3}.vcf.gz
 
 # Subset to linkage interval 
-bcftools view -O z -o ${3}_LI_${chr}_${start}_${end}.vcf.gz ${1} ${4}
+bcftools view -O z -o ${3}_LI_${chr}_${start}_${end}.vcf.gz ${3}.vcf.gz ${4}
 tabix ${3}_LI_${chr}_${start}_${end}.vcf.gz
 
 # Cleanup 
