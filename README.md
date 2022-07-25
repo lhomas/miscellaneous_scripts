@@ -16,4 +16,4 @@ These have been put together on the fly and are likely bad scripts, please don't
 
 # whole_genome_linkage_plots.R
 - Script containing functions to generate whole genome linkage plots with R using the output "-parametric.tbl" files produced by Merlin.
-- This script cotains a function to generate these plots for a single interation of linkage analysis (plot_genome_linkage) and one to take in multiple iterations of a linkage analysis, sum together the LOD scores, and plot summed totals.
+- This script cotains a function to generate these plots for a single interation of linkage analysis (plot_genome_linkage) and one to take in multiple iterations of a linkage analysis, sum together the LOD scores, and plot summed totals (plot_combined_genome_linkage).
