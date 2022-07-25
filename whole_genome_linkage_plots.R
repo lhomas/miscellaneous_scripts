@@ -142,6 +142,7 @@ plot_combined_genome_linkage <- function(...) {
                                        3, 3, 3, 3, 3, 3, 3, 3, 3, 2))
 
   # Generate whole genome linkage plot
+  # NOTE: Will need to edit y axis values to match total LOD scores for different analyses
   ggplot(cumulative_LOD, aes(x=POS, y=Total), group = CHR) +
     geom_line(aes(group = CHR)) +
     facet_grid(. ~ CHR,
